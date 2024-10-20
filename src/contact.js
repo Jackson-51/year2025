@@ -15,7 +15,7 @@ const Contact = () => {
                     <div className="heading">
                         <h1>Contact Us</h1>
                         <Link to='/home'>Home</Link>
-                        <span>/Thecoder</span>
+                        <span>/TheCoder</span>
                     </div>
                 </div>
                 <div style={{ width: '100%', height: '450px', border: 'none' }} className='map'>
