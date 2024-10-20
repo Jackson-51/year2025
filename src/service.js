@@ -12,16 +12,16 @@ const Service = () => {
                 </div>
                 <div className="service-grid">
                     <div className="service-item one">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/ailnzwyn.json"
-                        trigger="morph"
-                        state="morph-code"
-                        style={{width:'100px',height:'100px'}}
-                        colors="primary:#6e20ec,secondary:#fff"
-                        target=".one"
-                        >
-                    </lord-icon>
-                        <b>Web Delopment</b>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ailnzwyn.json"
+                            trigger="morph"
+                            state="morph-code"
+                            style={{width:'100px',height:'100px'}}
+                            colors="primary:#6e20ec,secondary:#fff"
+                            target=".one"
+                            >
+                        </lord-icon>
+                        <b>Web Development</b>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore necessitatibus </p>
                     </div>
                     <div className="service-item two">
