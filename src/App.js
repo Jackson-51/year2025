@@ -12,7 +12,7 @@ const App = () => {
       <div className="app">
         <Portfolio />
         <Switch>
-          <Redirect exact from="/" to="/contact"/>
+          <Redirect exact from="/" to="/home"/>
           <Route path="/home"><Home /></Route>
           <Route path="/about"><About /></Route>
           <Route path="/service"><Service /></Route>
