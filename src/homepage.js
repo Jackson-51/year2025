@@ -1,5 +1,6 @@
 import './portfolio.css';
-import jack from './images/jack.svg'
+import jack from './images/jack.svg';
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 const Home = () => {
     return ( 
@@ -9,7 +10,7 @@ const Home = () => {
                     <small>Hi There!</small>
                     <h3>I am a Developer</h3>
                     <small>I make the complex simple</small>
-                    <a href='/'>Contact Me</a>
+                    <Link to='/contact'>Contact Me</Link>
                 </div>
                 <div className="down">
                     <span>
