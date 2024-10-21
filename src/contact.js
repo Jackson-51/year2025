@@ -26,6 +26,7 @@ const Contact = () => {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
+                        title="my_map"
                     ></iframe>
                 </div>
                 <div className="interaction">
