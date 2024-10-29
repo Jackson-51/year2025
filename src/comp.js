@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+
 import './comp.css';
 import { useState } from 'react'
 
@@ -26,30 +26,30 @@ const Sidebar = () => {
             </header>
             <div className="items">
                 <span className="slider" style={{top:`${position * 56}px`}}></span>
-                <Link to="/" className="item" onMouseEnter={() => slide(0)}>
+                <div to="/" className="item" onMouseEnter={() => slide(0)}>
                     <i className="fa-solid fa-house"></i>
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Home</p>
-                </Link>
-                <Link to="/" className="item" onMouseEnter={() => slide(1)}>
+                </div>
+                <div to="/" className="item" onMouseEnter={() => slide(1)}>
                     <i className="fa-solid fa-gear"></i>
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Settings</p>
-                </Link>
-                <Link to="/" className="item" onMouseEnter={() => slide(2)}>
+                </div>
+                <div to="/" className="item" onMouseEnter={() => slide(2)}>
                     <i className="fa-brands fa-windows"></i>
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Dashboard</p>
-                </Link>
-                <Link to="/" className="item" onMouseEnter={() => slide(3)}>
+                </div>
+                <div to="/" className="item" onMouseEnter={() => slide(3)}>
                     <i className="fa-solid fa-envelope"></i>
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Mail</p>
-                </Link>
-                <Link to="/" className="item" onMouseEnter={() => slide(4)}>
+                </div>
+                <div to="/" className="item" onMouseEnter={() => slide(4)}>
                     <i className="fa-solid fa-cloud"></i>
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Cloud</p>
-                </Link>
-                <Link to="/" className="item" onMouseEnter={() => slide(5)}>
+                </div>
+                <div to="/" className="item" onMouseEnter={() => slide(5)}>
                     <i className="fa-solid fa-circle-dot"></i>    
                     <p style={{opacity:`${(value)? '0' : '1'}`}}>Workpiece</p>
-                </Link>
+                </div>
             </div>
         </div>
         </div>
