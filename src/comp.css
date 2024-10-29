@@ -53,7 +53,7 @@ header i{
     position: relative;
 }
 
-div.item{
+a.item{
     padding: 18px 22px;
     display:grid;
     grid-template-columns:repeat(10, 1fr);
@@ -64,15 +64,15 @@ div.item{
     justify-content:start;
 }
 
-div.item i{
+a.item i{
     grid-column:1/2;
 }
-div.item p{
+a.item p{
     grid-column: 2/11;
     margin-left:15px;
     transition: all 0.5s;
 }
-div.item:hover{
+a.item:hover{
    color:rgb(255, 255, 255);
    background-color:#120e1b;
 }
