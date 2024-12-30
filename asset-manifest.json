@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github.io/year2025/static/css/main.a92be311.css",
+    "main.js": "/github.io/year2025/static/js/main.e63ad6eb.js",
+    "static/media/party.svg": "/github.io/year2025/static/media/party.eb239bff4dd3806690e752c5b55dcf04.svg",
+    "index.html": "/github.io/year2025/index.html",
+    "main.a92be311.css.map": "/github.io/year2025/static/css/main.a92be311.css.map",
+    "main.e63ad6eb.js.map": "/github.io/year2025/static/js/main.e63ad6eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92be311.css",
+    "static/js/main.e63ad6eb.js"
+  ]
+}
