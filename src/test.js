@@ -1,17 +1,31 @@
 import "./test.css";
-import { useEffect, useState }  from "react";
+import { useEffect, useRef, useState }  from "react";
+import vid from './2024audio.mp4';
 
 const Test = () => {
     const [value, setValue] = useState(null);
     const [bool, setBool] = useState(null);
     const [username, setUsername] = useState('');
     const [popup, setPopup] = useState(false);
+    const videoRef = useRef(null);
+    const [isplaying, setIsplaying] = useState(false);
 
     const animate = () => {
+        const video = videoRef.current;
+        if (isplaying){
+            video.pause();
+        }
+        else{
+            video.play();
+        }
+
+        setIsplaying(!isplaying);
+
         setValue(true);
         setTimeout(() => {
             setBool(true);
-        }, 4000);
+        }, 3000);
+
     }
 
     useEffect(() => {
@@ -22,6 +36,9 @@ const Test = () => {
 
     return ( 
         <div className="test">
+            <video controls ref={videoRef}>
+                <source src={vid}/>
+            </video>
             { bool && <dotlottie-player src="https://lottie.host/773d6a65-af5a-4ae8-85be-b431f23470d9/3uLJZzwlyL.lottie" background="transparent" speed="1" style={{width: "100vw", height: "100vh"}} loop autoplay></dotlottie-player> }
             <div className="year" style={{transform : `${(bool)? "scale(1.2)" : ""}`}}>
             <h1>202</h1>
