@@ -36,7 +36,7 @@ const Test = () => {
 
     return ( 
         <div className="test">
-            <video controls ref={videoRef}>
+            <video loop controls ref={videoRef}>
                 <source src={vid}/>
             </video>
             { bool && <dotlottie-player src="https://lottie.host/773d6a65-af5a-4ae8-85be-b431f23470d9/3uLJZzwlyL.lottie" background="transparent" speed="1" style={{width: "100vw", height: "100vh"}} loop autoplay></dotlottie-player> }
