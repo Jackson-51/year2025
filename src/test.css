@@ -111,8 +111,8 @@ span p::before{
     background-color:black;
     padding:1px;
     position:absolute;
-    top:-120px;
-    left:35px;
+    top:-110px;
+    left:40px;
 } 
 
 .change .four::after{
@@ -123,7 +123,7 @@ span p::before{
     background-color:red;
     border-radius:50%;
     top: -220px;
-    left: -15px;
+    left: -10px;
     transform: scale(1, 1.2);
 } 
 
@@ -133,8 +133,8 @@ span p::before{
     background-color:black;
     padding:1px;
     position:absolute;
-    top:-120px;
-    left:35px;
+    top:-110px;
+    left:40px;
 } 
 
 .change .five::after{
@@ -145,12 +145,12 @@ span p::before{
     background-color:#ff8a04;
     border-radius:50%;
     top: -220px;
-    left: -15px;
+    left: -10px;
     transform: scale(1, 1.2);
 } 
 
 .four{
-    transform: translateY(55px);
+    transform: translateY(70px);
     transition:all 6s;
 }
 .five{
@@ -240,7 +240,7 @@ dotlottie-player{
     font-family: "Poppins", sans-serif;
     border-radius:10px;
     border:none;
-    margin-top:20px;
+    margin-top:10px;
     text-align: center;
     text-decoration: none;
 }
