@@ -1,15 +1,15 @@
 import "./test.css";
 import celeb  from './party.svg';
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react";
 
-const Identity = () => {
+const Identity = ({changeToB}) => {
     const [name, setName] = useState('');
     const [bool, setBool] = useState(null);
 
     const saveName = () => {
         localStorage.clear();
         localStorage.setItem('name', name);
+        changeToB();
     }
     const nameControl = () => {
         if (name) {
@@ -26,7 +26,7 @@ const Identity = () => {
                 <img src={celeb} alt="celebration" />
                 <label htmlFor="name">I need your name 👇</label>
                 <input type="text" placeholder="....." value={name} onKeyUp={nameControl} onChange={(e) => setName(e.target.value)}/>
-                {bool && <Link to="/test" onClick={saveName}>Done</Link>}
+                {bool && <button onClick={saveName}>Done</button>}
             </div>
         </div>
      );

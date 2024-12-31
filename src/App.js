@@ -1,18 +1,18 @@
+import { useState } from "react";
 import Identity from "./detail";
 import Test from "./test";
 import "./test.css";
-import {BrowserRouter as Router, Route , Switch} from "react-router-dom";
 
 const App = () => {
+  const [currentcomp, setCurrentcomp] = useState("A");
+
+  const changeToA = () => setCurrentcomp("A");
+  const changeToB = () => setCurrentcomp("B");
+
   return ( 
-    <Router>
         <div className="app">
-            <Switch>
-              <Route exact path="/test"><Test /></Route>
-              <Route exact path=""><Identity /></Route>
-            </Switch>
+          {(currentcomp === "A") ? <Identity changeToB={changeToB} /> : <Test changeToA={changeToA}/> }
         </div>
-    </Router>
    );
 }
  

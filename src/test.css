@@ -11,6 +11,7 @@
     width:100vw;
     height: 100vh;
     overflow-y: scroll;
+    position: relative;
 }
 *::-webkit-scrollbar{
     display:none;
@@ -24,6 +25,21 @@
     justify-content:center;
     align-items:center;
     overflow: hidden;
+    position:absolute;
+}
+.test > i{
+    position:absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 2em;
+    color:white;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50px;
+    z-index: 2000;
 }
 .test video{
     position:absolute;
@@ -195,6 +211,7 @@ dotlottie-player{
     display:flex;
     justify-content:center;
     align-items:center;
+    position:absolute;
 }
 
 .iden .form{
@@ -239,7 +256,7 @@ dotlottie-player{
     font-family: 'Poppins', sans-serif;
 }
 
-.form a{
+.form button{
     padding: 15px;
     background-color: #0044e2;
     color:white;
@@ -248,5 +265,4 @@ dotlottie-player{
     border:none;
     margin-top:10px;
     text-align: center;
-    text-decoration: none;
 }

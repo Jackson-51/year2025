@@ -2,10 +2,10 @@ import "./test.css";
 import { useEffect, useRef, useState }  from "react";
 import vid from './2024audio.mp4';
 
-const Test = () => {
+const Test = ({changeToA}) => {
     const [value, setValue] = useState(null);
     const [bool, setBool] = useState(null);
-    const [username, setUsername] = useState('');
+    const [username, setUsername] = useState('s');
     const [popup, setPopup] = useState(false);
     const videoRef = useRef(null);
     const [isplaying, setIsplaying] = useState(false);
@@ -36,6 +36,7 @@ const Test = () => {
 
     return ( 
         <div className="test">
+            <i className="fa-solid fa-angle-left" onClick={changeToA}></i>
             <video loop controls ref={videoRef}>
                 <source src={vid}/>
             </video>
